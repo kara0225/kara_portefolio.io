@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Hôpital Avicenne - Kara</title>
+    
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="styles.css">      <!-- Styles globaux (header, footer, variables) -->
+    <link rel="stylesheet" href="projet2.css">    <!-- Styles spécifiques à cette page -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+ <!-- ========================================
+         HEADER (Liens modifiés pour revenir à l'accueil)
+         ======================================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html#accueil" class="logo">
+                <div class="logo-img">
+                    <img src="images/logo.JPG" alt="Logo Kara">
+                </div>
+                <span class="logo-text">KARA</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="index.html#accueil" class="nav-link">Accueil</a>
+                <a href="index.html#presentation" class="nav-link">Présentation</a>
+                <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+     <!-- ========================================
+         SECTION 1 : PRÉSENTATION HÔPITAL (AVEC FOND ANIMÉ)
+         ======================================== -->
+    <section class="project-hero">
+        <!-- Fond animé (récupéré du style.css) -->
+        <div class="hero-bg">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+        </div>
+
+        <div class="container hero-content projet-hero-container">
+            
+            <!-- Image de l'hôpital -->
+            <div class="hospital-image-wrapper animate-on-scroll">
+                <img src="images/avicenne.webp" alt="Hôpital Avicenne Bobigny" class="hospital-photo">
+            </div>
+
+            <!-- Texte de présentation -->
+            <div class="hospital-presentation animate-on-scroll">
+                <span class="project-badge-hero">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    Stage de BTS SIO
+                </span>
+                
+                <h1 class="hero-title">Hôpital Avicenne (AP-HP)</h1>
+                
+                <p class="hero-subtitle">
+                    Situé à Bobigny (93), l'hôpital Avicenne est un établissement hospitalo-universitaire de référence. 
+                    D'une capacité de plus de 800 lits, il dispose d'une infrastructure informatique critique 
+                    nécessitant une maintenance rigoureuse et un support technique réactif pour assurer 
+                    la continuité des services de soins.
+                </p>
+            </div>
+        </div>
+    </section>
+ <!-- ========================================
+         SECTION 2 : MISSIONS RÉALISÉES
+         ======================================== -->
+    <section class="project-section missions-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Missions réalisées</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="missions-grid">
+                <!-- Mission 1 -->
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/>
+                        </svg>
+                    </div>
+                    <h3>Support Technique</h3>
+                    <p>Assistance aux médecins et au personnel administratif. Résolution d’incidents matériels et logiciels en urgence.</p>
+                </div>
+
+                <!-- Mission 2 -->
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Maintenance & Installation</h3>
+                    <p>Maintenance préventive des postes, installation de nouveaux équipements et mise à jour logicielle.</p>
+                </div>
+
+                <!-- Mission 3 -->
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Assistance Utilisateurs</h3>
+                    <p>Écoute des besoins, diagnostic rapide et formation succincte des utilisateurs sur les outils informatiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 3 : COMPÉTENCES DÉVELOPPÉES
+         ======================================== -->
+    <section class="project-section skills-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Compétences développées</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-container">
+                
+                <!-- Colonne Technique -->
+                <div class="skills-column animate-on-scroll">
+                    <h3 class="skills-column-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        Compétences Techniques
+                    </h3>
+
+                    <div class="skill-item-detail">
+                        <h4>Installation Systèmes Windows</h4>
+                        <ul>
+                            <li>Installation et configuration de postes Windows.</li>
+                            <li>Mise en place de périphériques (imprimantes, scanners).</li>
+                            <li>Maintenance préventive et curative.</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-item-detail">
+                        <h4>Réseau</h4>
+                        <ul>
+                            <li>Configuration IP et DNS.</li>
+                            <li>Diagnostic de problèmes de connexion.</li>
+                            <li>Vérification du câblage et connectique.</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-item-detail">
+                        <h4>Gestion des utilisateurs</h4>
+                        <ul>
+                            <li>Création de comptes utilisateurs.</li>
+                            <li>Gestion des accès et des droits.</li>
+                            <li>Support lié aux mots de passe et identifiants.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Colonne Professionnelle -->
+                <div class="skills-column animate-on-scroll">
+                    <h3 class="skills-column-title professional">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        Compétences Professionnelles
+                    </h3>
+
+                    <div class="skill-item-detail">
+                        <h4>Gestion des priorités</h4>
+                        <p>Traitement des tickets selon leur urgence (incidents bloquants vs demandes d'évolution) et gestion du temps.</p>
+                    </div>
+
+                    <div class="skill-item-detail">
+                        <h4>Travail en équipe</h4>
+                        <p>Collaboration avec l'équipe informatique et les autres services médicaux pour la résolution de problèmes transverses.</p>
+                    </div>
+                    
+                    <div class="skill-item-detail">
+                        <h4>Communication</h4>
+                        <p>Vulgarisation technique pour expliquer les solutions aux utilisateurs non-initiés (médecins, administratifs).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BOUTON RETOUR
+         ======================================== -->
+    <div class="container navigation-bottom">
+        <a href="index.html#portfolio" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"/>
+                <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Retour au Portfolio
+        </a>
+    </div>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Logo Kara">
+                    </div>
+                    <span>Kara</span>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 Kara. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="projet2.js"></script>
+</body>
+</html>
